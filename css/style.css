@@ -6,81 +6,6 @@ body {
 .thumbnail {
     border: 0;
 }
-@media only screen and (max-width: 991px) {
-#webcodecam-canvas, #scanned-img {
-    background-color: #2d2d2d;
-    width: 600px;
-    height: 500px;
-    }
-	#latar-tengah{
-		height: 1250px;
-	}
-}
-
-@media only screen and (max-width: 767px) {
-#webcodecam-canvas, #scanned-img {
-    background-color: #2d2d2d;
-    width: 600px;
-    height: 500px;
-    }
-		.panel-info{
-			position: absolute;
-			top: 30%;
-			margin-left: 2%;
-			margin-right: 2%;
-		}
-	.form-group{
-		padding-right: 30px;
-	}
-	#latar-tengah{
-		height: 1350px;
-	}
-	#user{
-		width: 100%;
-		text-align: center;
-	}#camera-select, .form-group{
-		margin-left: 30%;
-	}
-	.glyphicon, .btn{
-		font-size: 120%;
-		width: 50px;
-		height: 50px;
-		padding-top: 6px;
-		padding-left: 0;
-	}
-}
-@media only screen and (min-width: 992px) {
-    #webcodecam-canvas, #scanned-img {
-        background-color: #2d2d2d;
-        width: 500px;
-        height: 400px;
-		margin-top: 30px;
-        }
-		.panel-info{
-			position: absolute;
-			top: 30%;
-			margin-left: 2%;
-			margin-right: 2%;
-		}
-		#latar-tengah{
-			height: 400px;
-		}
-    }
-
-@media only screen and (max-width: 500px) {
-#webcodecam-canvas, #scanned-img {
-    background-color: #2d2d2d;
-    width: 250px;
-    height: 250px;
-	margin-top: 5px;
-    }
-	#latar-tengah{
-		height: 850px;
-	}
-	.glyphicon, .btn{
-	}
-}
-
 #camera-select {
     display: inline-block;
     width: auto;
@@ -239,10 +164,6 @@ h1{font-family: Metropolis-Bold;}
 	background: rgba(185,83,85,1.00);
 }
 
-.form-group{
-	margin: auto;
-}
-
 
 input[type=range]{
 	width: 100%;
@@ -256,7 +177,8 @@ input[type=range]::-webkit-slider-runnable-track{
 	-webkit-appearance: none;
 	background: rgba(239,239,239,1.00);
 	border-radius: 10px;
-} input[type=range]:focus::-webkit-slider-runnable-track{
+} input[type=range]:focus::-webkit-slider-runnable-track,
+input[type=range]::selection{
 	background: rgba(205,205,205,1.00);
 }
 input[type=range]::-webkit-slider-thumb{
@@ -345,7 +267,7 @@ input[type=range]:focus{
 	width: 100%;
 }
 #pesawat-2{
-	background-image: url(../img/pesawat-1.png);
+	background-image: url(../img/pesawat-2.png);
 	background-size: cover;
 	background-position: center;
 	width: 50px;
@@ -356,7 +278,9 @@ input[type=range]:focus{
 	background-size: cover;
 	background-position: center;
 	width: 40px;
-	height: 23px;
+	height: 30px;
+	right: 400px;
+	position: absolute;
 	background-image: url(../img/pesawat-1.png);
 }
 
@@ -370,7 +294,7 @@ input[type=range]:focus{
 
 #latar-bawah{
 	position: absolute;
-	height: 580px;;
+	height: 580px;
 	width: 100%;
 }
 #pelangi{
@@ -398,4 +322,110 @@ input[type=range]:focus{
 	color: #763d89;
 	width: 100%;
 	text-align: center;
+}
+
+
+@media only screen and (max-width: 991px) {
+#webcodecam-canvas, #scanned-img {
+    background-color: #2d2d2d;
+    width: 600px;
+    height: 500px;
+    }
+	#latar-tengah{
+		height: 1250px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+#webcodecam-canvas, #scanned-img {
+    background-color: #2d2d2d;
+    width: 600px;
+    height: 500px;
+    }
+		.panel-info{
+			position: absolute;
+			top: 30%;
+			margin-left: 2%;
+			margin-right: 2%;
+		}
+	#latar-tengah{
+		height: 1350px;
+	}
+	#user{
+		width: 100%;
+		text-align: center;
+	}#camera-select, .form-group{
+		margin-left: 20%;
+		margin-top: 10px;
+	}
+	.glyphicon, .btn{
+		font-size: 120%;
+		width: 50px;
+		height: 50px;
+		padding-top: 6px;
+		padding-left: 0;
+	}
+}
+@media only screen and (min-width: 992px) {
+    #webcodecam-canvas, #scanned-img {
+        background-color: #2d2d2d;
+        width: 500px;
+        height: 400px;
+		margin-top: 30px;
+        }
+		.panel-info{
+			position: absolute;
+			top: 30%;
+			margin-left: 2%;
+			margin-right: 2%;
+		}
+		#latar-tengah{
+			height: 400px;
+		}
+    }
+
+@media only screen and (max-width: 550px) {
+#webcodecam-canvas, #scanned-img {
+    background-color: #2d2d2d;
+    width: 250px;
+    height: 250px;
+	margin-top: 5px;
+    }
+	#latar-tengah{
+		height: 850px;
+	}
+	#latar-bawah{
+		height: 450px;
+	}
+	#pelangi{
+		height: 450px;
+	}
+#pesawat-kiri{
+	position: absolute;
+	top: 70px;
+	left: 8%;
+	background-image: url(../img/pesawat-kiri.png);
+	background-size: cover;
+	background-position: center;
+	width: 160px;
+	height: 100px;
+}
+#pesawat-kanan{
+	position: absolute;
+	top: 50px;
+	right: 8%;
+	background-image: url(../img/pesawat-kanan.png);
+	background-size: cover;
+	background-position: center;
+	width: 50px;
+	height: 40px;
+}
+	#pesawat-1{
+		position: absolute;
+		right: 300px;
+		top: 90px;
+	}
+
+	.glyphicon, .btn{
+	}
 }
