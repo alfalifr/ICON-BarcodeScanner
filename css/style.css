@@ -412,7 +412,7 @@ input[type=range]:focus{
 }
 #pesawat-kanan{
 	position: absolute;
-	top: 50px;
+	top: 40px;
 	right: 8%;
 	background-image: url(../img/pesawat-kanan.png);
 	background-size: cover;
@@ -424,6 +424,12 @@ input[type=range]:focus{
 		position: absolute;
 		right: 300px;
 		top: 90px;
+	}#pesawat-2{
+		height: 22px;
+		width: 30px;
+		left: 15px;
+		margin-top: 50px;
+		position: absolute;
 	}
 
 	.glyphicon, .btn{
