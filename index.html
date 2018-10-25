@@ -14,6 +14,7 @@ else {
 <html>
     <head>
         <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ICON ISE 2018</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
@@ -32,7 +33,7 @@ else {
             <div class="panel panel-info">
                 <div class="panel-heading">
                     <div class="navbar-form navbar-left">
-                        <h4><?php echo $username; ?> (Jumlah Poin: 50)</h4>
+                        <h4 id="user"><?php echo $username; ?> (Jumlah Poin: 50)</h4>
                     </div>
                     <div class="navbar-form navbar-right">
                         <select class="form-control" id="camera-select"></select>
@@ -116,14 +117,14 @@ else {
 		<div id="latar-tengah">
 			<div id="pesawat-1"></div>
 			<div id="pesawat-2"></div>
+			<div id="sulur"></div>
 		</div>
-		<div id="sulur"></div>
 		<div id="latar-bawah">
 			<div id="pelangi"></div>
 			<div id="orang"></div>
+			<span id="copyright">© 2018 IT Dev ISE!</span>
 		</div>
 		<div id="warna-latar-bawah"></div>
-		<span id="copyright">© 2018 IT Dev ISE!</span>
 				</div>
     </body>
 </html>
