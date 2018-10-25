@@ -16,6 +16,7 @@ body {
 		height: 1250px;
 	}
 }
+
 @media only screen and (max-width: 767px) {
 #webcodecam-canvas, #scanned-img {
     background-color: #2d2d2d;
@@ -53,6 +54,7 @@ body {
         background-color: #2d2d2d;
         width: 500px;
         height: 400px;
+		margin-top: 30px;
         }
 		.panel-info{
 			position: absolute;
@@ -64,6 +66,20 @@ body {
 			height: 400px;
 		}
     }
+
+@media only screen and (max-width: 360px) {
+#webcodecam-canvas, #scanned-img {
+    background-color: #2d2d2d;
+    width: 250px;
+    height: 250px;
+	margin-top: 5px;
+    }
+	#latar-tengah{
+		height: 850px;
+	}
+	.glyphicon, .btn{
+	}
+}
 
 #camera-select {
     display: inline-block;
@@ -227,10 +243,6 @@ h1{font-family: Metropolis-Bold;}
 	margin: auto;
 }
 
-
-#webcodecam-canvas, #scanned-img {
-	margin-top: 30px;
-}
 
 input[type=range]{
 	width: 100%;
