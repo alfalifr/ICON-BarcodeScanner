@@ -365,6 +365,12 @@ input[type=range]:focus{
 		padding-top: 6px;
 		padding-left: 0;
 	}
+	input[type=range]:hover::-webkit-slider-runnable-track{
+		background: rgba(205,205,205,1.00);
+	}
+	input[type=range]:hover::-webkit-slider-thumb{
+	background: rgba(97,70,102,1.00);
+	}
 }
 @media only screen and (min-width: 992px) {
     #webcodecam-canvas, #scanned-img {
